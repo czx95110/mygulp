@@ -1,3 +1,10 @@
-/**
- * Created by czx on 2017/6/4.
- */
+var gulp = require('gulp');
+var gulpLoadPlugins = require('gulp-load-plugins');
+var plugin = gulpLoadPlugins();
+
+gulp.task('js', function () {
+  gulp.src('srcjs/es6.js')
+    .pipe()
+    .pipe()
+    .pipe(gulp.dest('destjs'));
+});
